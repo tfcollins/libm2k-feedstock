@@ -1,5 +1,5 @@
 {% set name = "libm2k" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   - url: https://github.com/analogdevicesinc/{{ name }}/archive/v{{ version }}.tar.gz
-    sha256: 64f62cf9a72d625c4a4344a1984a2f8c5d4a95aeaed0026a0cba7ac0c0ca7390
+    sha256: 986f11637b4e99652e2d7e9af9b57e4f4caf05f02b9bedd8aabdc6a421c8ec22
 
 build:
-  number: 1
+  number: 0
   run_exports:
     - {{ pin_subpackage('libm2k', max_pin='x.x') }}
 
@@ -51,12 +51,12 @@ about:
   license: LGPL-2.1-or-later
   license_family: LGPL
   license_file: LICENSE
-  summary: 'Library for interfacing with the ADALM2000'
+  summary: Library for interfacing with the ADALM2000
   description: |
-     C++ library and python bindings for interfacing with
-     the ADALM2000 portable lab. This library simplifies
-     ADALM2000's functionality into a series of easy to
-     use components.
+    C++ library and python bindings for interfacing with
+    the ADALM2000 portable lab. This library simplifies
+    ADALM2000's functionality into a series of easy to
+    use components.
   doc_url: https://analogdevicesinc.github.io/libm2k/
   dev_url: https://github.com/analogdevicesinc/libm2k
 
