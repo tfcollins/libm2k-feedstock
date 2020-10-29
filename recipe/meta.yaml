@@ -1,5 +1,5 @@
 {% set name = "libm2k" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/analogdevicesinc/{{ name }}/archive/v{{ version }}.tar.gz
-    sha256: 986f11637b4e99652e2d7e9af9b57e4f4caf05f02b9bedd8aabdc6a421c8ec22
+    sha256: 25e3a572275cfd50c1afd8e5b76fa7bf3d68cbb580e5c83faba9a34749a16e65
 
 build:
   number: 0
